@@ -22,7 +22,7 @@ class Urlcontroller extends Controller
             'shortened_url' => $shortened_url
         ]);
 
-        return response()->json(['shortened_url' => url($shortened_url)], 200);
+        return response()->json(['shortened_url' => url("/api/$shortened_url")], 200);
     }
 
     public function show($shortened_url)

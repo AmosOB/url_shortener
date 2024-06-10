@@ -29,9 +29,9 @@ function App() {
     };
 
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-12">
+        <div className="container-fluid">
+            <div className="row justify-content-center">
+                <div className="col">
                     <form onSubmit={shortenLink} className="d-flex">
                         <div className="form-floating mx-3">
                             <input
